@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="uikit.min.css">
 </head>
 <body>
-    <span id="top"></span>
     <div uk-sticky>
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position: relative; z-index: 980;">
+                <div class="uk-navbar-left uk-margin-left">
+                    <a class="k-logo uk-link-reset uk-text-muted" href="#" uk-scroll="duration: 2000">hirotatsu.</a>
+                </div>
             <div class="uk-navbar-right uk-margin-right">
                 <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#menu-modal"></a>
             </div>
@@ -28,12 +30,12 @@
         <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
             <button class="uk-modal-close-full uk-close-large uk-margin-small-right uk-margin-small-top" type="button" uk-close></button>
             <div class="uk-text-center">
+                <div class="uk-text-large uk-link-reset"><a class="uk-modal-close" href="#" uk-scroll="duration: 2000">hirotatsu.</a></div>
                 <ul class="uk-list uk-list-large uk-link-text uk-link-reset">
-                    <li><a class="uk-modal-close" href="#top" uk-scroll>HOME</a></li>
-                    <li><a class="uk-modal-close" href="#about" uk-scroll>ABOUT</a></li>
-                    <li><a class="uk-modal-close" href="#history" uk-scroll>HISTORY</a></li>
-                    <li><a class="uk-modal-close" href="#pictures" uk-scroll>PICTURES</a></li>
-                    <li><a class="uk-modal-close" href="#contact" uk-scroll>CONTACT</a></li>
+                    <li><a class="uk-modal-close" href="#about" uk-scroll="duration: 2000">ABOUT</a></li>
+                    <li><a class="uk-modal-close" href="#history" uk-scroll="duration: 2000">HISTORY</a></li>
+                    <li><a class="uk-modal-close" href="#project" uk-scroll="duration: 2000">PROJECT</a></li>
+                    <li><a class="uk-modal-close" href="#contact" uk-scroll="duration: 2000">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -43,10 +45,10 @@
         <img data-src="images/pic1.jpg" uk-img>
     </div>
 
-    <div class="uk-section uk-margin-large-right uk-margin-large-left">
+    <div class="uk-section uk-container uk-margin-auto">
         <div class="uk-width-1-3@l uk-width-2-3@s uk-width-1-1 uk-margin-auto">
             <div class="uk-margin-medium" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true">
-                <p class="uk-text-large uk-text-muted">ただ、旅がしたい。</p>
+                <p class="uk-text-large uk-text-muted">ただ、旅がしたい</p>
                 <hr class="uk-divider-small uk-margin-medium-bottom">
                 <p class="uk-text-meta">みなさんは旅をする理由がありますか？</p>
                 <p class="uk-text-meta">それは社会性のある立派なものですか？自己中心的なものですか？</p>
@@ -65,8 +67,8 @@
         <div class="uk-flex-middle" uk-grid>
             <div class="uk-width-1-2@m uuk-width-2-3@s uk-width-1-1 uk-margin-auto">
                 <div class="uk-margin-medium" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
-                    <p class="uk-text-large uk-text-muted" >さまよい歩き、その先へ</p>
-                    <hr class="uk-divider-small uk-margin-medium-bottom">
+                    <p class="uk-text-large uk-text-muted uk-text-right">旅という発見機</p>
+                    <hr class="uk-divider-small uk-margin-medium-bottom uk-text-right">
                     <p class="uk-text-meta">世界を旅すると、見たことのない景色見ることができます。全く異なる文化に触れることができます。最高の笑顔も最低の経験もすることになるでしょう。</p>
                     <p class="uk-text-meta">その中で、何か発見があるはずです。</p>
                     <p class="uk-text-meta">それらひとつひとつの発見を大切にしておくと、どこかで点と点が繋がって線になり、やがて形になっていくのかなと思います。</p>
@@ -141,9 +143,10 @@
                 <div class="uk-margin-large-left">
                     <ul class="uk-list">
                         <li>1994年12月8日生まれ</li>
-                        <li>2016年8月 初めての海外</li>
-                        <li>2017年3月 旅(10カ国)</li>
+                        <li>2016年8月 初海外</li>
+                        <li>2017年3月 卒業旅行(10カ国)</li>
                         <li>2017年4月 都内のIT企業に入社</li>
+                        <li>2018年7月 退職</li>
                         <li>2018年8月 ヒッチハイク日本一周</li>
                         <li>2018年9月 ゼロ円ワーホリ(NZ)</li>
                         <li>2019年9月 ヒッチハイクAUS一周</li>
@@ -155,56 +158,82 @@
         </div>
     </div>
 
+    <div class="uk-section uk-container uk-margin-large" id="project">
+            <div class="uk-text-center uk-container">
+                <div uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true;">
+                    <div class="uk-text-lead" >PROJECT</div>
+                    <hr class="uk-divider-small uk-margin-medium-bottom">
+                </div>
+                <article class="uk-article uk-margin-xlarge" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true;">
+                    <div class="uk-text-large">ヒッチハイク日本一周</div>
+                    <p class="uk-article-meta">2018.08.10-2018.08.19</p>
+                    <p>家から出てから、徒歩で大通りまで行き、そこからヒッチハイクで最南端の佐多岬へ。そのまま最北端の宗谷岬へ。その後ヒッチハイクで家の近くまで帰ってきて、徒歩で帰宅する。ルールは「移動は徒歩かヒッチハイクのみ」「宿は使わない、基本的には野宿をする」結果、41台の車を乗り継いで、達成することができました。さらに今回の活動で使ったお金は「ゼロ円」（フェリー代を除く）。ご飯や飲み物をすべてヒッチハイクで乗せてお世話になった方にごちそうになりました。また、野宿を基本としていましたが、ヒッチハイクでお世話になった方の家に泊めてもらうこともしばしば。「人の優しさに触れる旅」となりました。心から感謝を伝えたいです。本当にありがとうございました。
+                    </p>
+                </article>
+                <article class="uk-article uk-margin-xlarge" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true;">
+                    <div class="uk-text-large">ゼロ円ワーホリ</div>
+                    <p class="uk-article-meta">2018.09.12-2019.09.12</p>
+                    <p>「ヒッチハイク」と「ボランディア」でゼロ円ワーホリをしている。具体的には...生活の基本である衣食住。これをゼロ円に抑えることができれば、ゼロ円ワーホリができるのでは。衣類は日本から持ってくれば良い。代わりにニュージーランドを一周したい。そこで「衣」を「移」に変更して「移食住」に掛かる費用をゼロ円にしてワーホリをすることに。もちろん最低限かかってくるお金はある。家からの電車代や飛行機代、島移動等。それらの費用を計10万円以内に収める。また可能な限りクラウドファンディングでご支援頂く。（3万円近くご支援頂きました。ありがとうございました。）このように、「ワーホリは初期費用100万円」と言われている「ワーホリのあたりまえ」に対して一石を投じたい。そんな活動です。</p>
+                </article>
+            </div>
+        </div>
+
+    <div class="uk-section uk-margin-large" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true;">
+            <div class="uk-text-center">
+                <div class="uk-text-lead" >ゼロ円ワーホリ終了まで</div>
+                <hr class="uk-divider-small uk-margin-medium-bottom">
+                <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid uk-countdown="date: 2019-09-12T00:00:00+00:00">
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-days"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible">Days</div>
+                    </div>
+                    <div class="uk-countdown-separator">:</div>
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-hours"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible">Hours</div>
+                    </div>
+                    <div class="uk-countdown-separator">:</div>
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-minutes"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible">Minutes</div>
+                    </div>
+                    <div class="uk-countdown-separator">:</div>
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-seconds"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <div class="uk-text-center uk-container uk-margin-xlarge" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
         <img data-src="images/pic3.jpg" decoding="async" uk-img>
     </div>
 
-    <div uk-slider class="uk-section" id="pictures" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-        <div class="uk-text-center uk-margin-medium">
-            <div class="uk-text-lead">PICTURES</div>
-            <hr class="uk-divider-small uk-margin-medium-bottom">
-        </div>
-        <div class="uk-position-relative uk-visible-toggle uk-light">
-            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m">
-                <li>
-                    <img src="images/picture1.jpg" decoding="async" alt="">
-                </li>
-                <li>
-                    <img src="images/picture2.jpg" decoding="async" alt="">
-                </li>
-                <li>
-                    <img src="images/picture3.jpg" decoding="async" alt="">
-                </li>
-                <li>
-                    <img src="images/picture4.jpg" decoding="async" alt="">
-                </li>
-                <li>
-                    <img src="images/picture5.jpg" decoding="async" alt="">
-                </li>
-                <li>
-                    <img src="images/picture6.jpg" decoding="async" alt="">
-                </li>
-                <li>
-                    <img src="images/picture7.jpg" decoding="async" alt="">
-                </li>
-                <li>
-                    <img src="images/picture8.jpg" decoding="async" alt="">
-                </li>
-            </ul>
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        </div>
-    </div>
-
-    <div class="uk-section uk-margin-large" id="contact" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
+    <div class="uk-section uk-container uk-margin-large" id="contact" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
         <div class="uk-text-center uk-container">
             <div class="uk-text-lead" >CONTACT</div>
             <hr>
             <div class="uk-text-meta"><a href="mailto:hirotatsuuu@gmail.com">hirotatsuuu@gmail.com</a></div>
+            <div class="uk-text-meta uk-margin-medium">or</div>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy89YEQC3hpnd3_TzXnkBvbDmHv5JZ--5YkCeSJEFlh8G0zQ/formResponse">
+                <div class="uk-margin">
+                    <input class="uk-input uk-width-1-2@s" type="text" name="entry.1627277256" placeholder="お名前" required>
+                </div>
+                <div class="uk-margin">
+                    <input class="uk-input uk-width-1-2@s" type="text" name="entry.1805511184" placeholder="メールアドレス" required>
+                </div>
+                <div class="uk-margin">
+                    <textarea class="uk-textarea uk-width-1-2@s" rows="10" name="entry.841451467" placeholder="お問い合わせ内容" required></textarea>
+                </div>
+                <div class="uk-margin uk-text-center">
+                    <button class="uk-button uk-button-default uk-width-1-2@s" type="submit">送信</button>
+                </div>
+            </form>
         </div>
     </div>
 
-    <div class="uk-margin-xlarge" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
+    <div class="uk-margin-xlarge uk-container" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
         <div class="uk-text-center">
             <img data-src="images/pic4.jpg" decoding="async" uk-img>
         </div>
@@ -212,12 +241,12 @@
 
     <div class="uk-section uk-margin-xlarge" id="contact" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
         <div class="uk-text-center uk-container">
-            <div class="uk-text-meta">Tonlé Sap Lake, Cambodia 2017</div>
+            <div class="uk-text-meta">Tonlé Sap Lake, Cambodia</div>
         </div>
     </div>
 
     <div class="uk-section-xsmall uk-section-secondary uk-light" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-        <div class="uk-margin-top uk-margin-bottom uk-text-center uk-text-meta">Copyright 2019 hirotatsu.</div>
+        <div class="uk-margin-top uk-margin-bottom uk-text-center uk-text-meta">&copy; 2019 hirotatsu.</div>
     </div>
 
     <script src="uikit.min.js"></script>
