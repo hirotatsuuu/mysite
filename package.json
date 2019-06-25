@@ -1,0 +1,17 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hirotatsuuu/mysite.git",
+  "author": "hirotatsu <hirotatsuuu@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp image"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^6.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0"
+  }
+}
