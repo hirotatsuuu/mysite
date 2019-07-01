@@ -16,7 +16,7 @@
 </head>
 <body>
     <div uk-sticky>
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position: relative; z-index: 980;">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position:relative;z-index:980;">
             <div class="uk-navbar-right uk-margin-right">
                 <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#menu-modal"></a>
             </div>
@@ -32,20 +32,20 @@
                     <li><a class="uk-modal-close" href="#about" uk-scroll="duration: 2000">ABOUT</a></li>
                     <li><a class="uk-modal-close" href="#history" uk-scroll="duration: 2000">HISTORY</a></li>
                     <li><a class="uk-modal-close" href="#project" uk-scroll="duration: 2000">PROJECT</a></li>
-                    <li><a class="uk-modal-close" href="#where" uk-scroll="duration: 2000">WHERE</a></li>
                     <li><a class="uk-modal-close" href="#contact" uk-scroll="duration: 2000">CONTACT</a></li>
+                    <li><a class="uk-modal-close" href="#where" uk-scroll="duration: 2000">WHERE</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
     <div class="uk-text-center uk-container uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-        <div class="uk-visible-toggle" tabindex="-1" uk-slideshow="animation:fade;autoplay:true;autoplay-interval:3000;ratio:7:4.5;pause-on-hover:false;">
+        <div class="uk-visible-toggle" tabindex="-1" uk-slideshow="animation:fade;autoplay:true;autoplay-interval:10000;ratio:7:4.5;pause-on-hover:false;">
             <ul class="uk-slideshow-items">
-                <li><img src="images/pic01.jpg" alt="" uk-cover uk-img></li>
-                <li><img src="images/pic02.jpg" alt="" uk-cover uk-img></li>
-                <li><img src="images/pic04.jpg" alt="" uk-cover uk-img></li>
-                <li><img src="images/pic07.jpg" alt="" uk-cover uk-img></li>
+                <li><img src="images/pic01.jpg" uk-cover uk-img></li>
+                <li><img src="images/pic02.jpg" uk-cover uk-img></li>
+                <li><img src="images/pic04.jpg" uk-cover uk-img></li>
+                <li><img src="images/pic07.jpg" uk-cover uk-img></li>
             </ul>
         </div>
     </div>
@@ -125,24 +125,31 @@
                 </ul>
             </div>
             <div class="uk-width-1-2@s uk-width-1-1 uk-flex-first uk-flex-last@s" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-                <div class="uk-visible-toggle" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 5000;">
-                    <ul class="uk-slideshow-items">
-                        <li><img src="images/account.jpg" alt="account" uk-cover uk-img decoding="async"></li>
-                        <li><img src="images/account_reverse.jpg" alt="account_reverse" uk-cover uk-img decoding="async"></li>
-                    </ul>
-                </div>
+                <img src="images/account.jpg" alt="account" uk-img decoding="async">
             </div>
         </div>
     </div>
 
     <div class="uk-text-center uk-container uk-margin-xlarge" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-        <img data-src="images/pic02.jpg" decoding="async" uk-img>
+        <div class="uk-visible-toggle" tabindex="-1" uk-slideshow="animation:fade;autoplay:true;autoplay-interval:9000;pause-on-hover:false;">
+                <ul class="uk-slideshow-items">
+                    <li><img src="images/pic02.jpg" uk-cover uk-img decoding="async"></li>
+                    <li><img src="images/pic07.jpg" uk-cover uk-img decoding="async"></li>
+                </ul>
+            </div>
     </div>
 
     <div class="uk-section uk-margin-large" id="history">
         <div class="uk-flex-middle" uk-grid>
             <div class="uk-width-1-2@m uk-flex-last uk-flex-first@s" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-                <img data-src="images/pic08.jpg" decoding="async" uk-img>
+                <div class="uk-visible-toggle" tabindex="-1" uk-slideshow="animation:fade;autoplay:true;autoplay-interval:5000;pause-on-hover:false;">
+                    <ul class="uk-slideshow-items">
+                        <li><img src="images/pic08.jpg" uk-cover uk-img decoding="async"></li>
+                        <li><img src="images/pic05.jpg" uk-cover uk-img decoding="async"></li>
+                        <li><img src="images/pic06.jpg" uk-cover uk-img decoding="async"></li>
+                        <li><img src="images/pic03.jpg" uk-cover uk-img decoding="async"></li>
+                    </ul>
+                </div>
             </div>
             <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
                 <div class="uk-margin-large-left uk-margin-large-top">
@@ -158,8 +165,6 @@
                         <li>2018年7月 退職</li>
                         <li>2018年8月 ヒッチハイク日本一周</li>
                         <li>2018年9月 ゼロ円ワーホリ(NZ)</li>
-                        <li>2019年9月 ヒッチハイクAUS一周</li>
-                        <li>2019年12月 世界一周</li>
                         <li></li>
                     </ul>
                 </div>
@@ -220,27 +225,18 @@
         <img data-src="images/pic03.jpg" decoding="async" uk-img>
     </div>
 
-    <div class="uk-section uk-container uk-margin-large" id="where">
-        <div class="uk-text-center uk-container">
-            <div uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-                <div class="uk-text-lead" >WHERE</div>
-                <hr class="uk-divider-small uk-margin-medium-bottom">
-            </div>
-            <div class="uk-margin-xlarge-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98545.86919775498!2d176.7983402948895!3d-39.47930369172639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69c9d64fb1ca99%3A0x500ef6143a2e850!2z44ON44O844OU44Ki!5e0!3m2!1sja!2snz!4v1561543103617!5m2!1sja!2snz" width="640" height="400" frameborder="0" style="border:0;width:95%;filter:grayscale(100%);-webkit-filter:grayscale(100%);"></iframe>
-            </div>
-            <div class="uk-margin-xlarge" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-                <a class="uk-link-reset" href="https://twitter.com/hirotatsuuu" target="_blank">#世界のどこかで会いましょう</a>
-            </div>
-        </div>
-    </div>
-
     <div class="uk-section uk-container uk-margin-large" id="contact" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
         <div class="uk-text-center uk-container">
             <div class="uk-text-lead" >CONTACT</div>
-            <hr>
-            <div class="uk-text-meta"><a class="uk-link-reset" href="https://twitter.com/intent/tweet?screen_name=hirotatsuuu&ref_src=twsrc%5Etfw" data-show-count="false">@hirotatsuuuにツイートする</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-            <div class="uk-text-meta uk-margin-medium">or</div>
+            <hr class="uk-divider-small uk-margin-medium-bottom">
+            <div class="uk-margin-large">
+                <div class="uk-text-meta"><a href="mailto:hirotatsuuu@gmail.com">hirotatsuuu@gmail.com</a></div>
+            </div>
+            <div class="uk-margin-large">
+                <div class="uk-text-meta">
+                    <a class="uk-link-reset" href="https://twitter.com/intent/tweet?screen_name=hirotatsuuu&ref_src=twsrc%5Etfw" data-show-count="false">@hirotatsuuuにツイートする</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
             <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy89YEQC3hpnd3_TzXnkBvbDmHv5JZ--5YkCeSJEFlh8G0zQ/formResponse">
                 <div class="uk-margin">
                     <input class="uk-input uk-width-1-2@s" type="text" name="entry.1627277256" placeholder="name" required>
@@ -255,21 +251,27 @@
                     <button class="uk-button uk-button-default uk-width-1-2@s" type="submit">SEND</button>
                 </div>
             </form>
-            <div class="uk-text-meta uk-margin-medium">or</div>
-            <div class="uk-text-meta"><a href="mailto:hirotatsuuu@gmail.com">hirotatsuuu@gmail.com</a></div>
         </div>
     </div>
+
+    <div class="uk-section uk-container uk-margin-large" id="where">
+        <div class="uk-text-center uk-container">
+            <div uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
+                <div class="uk-text-lead">WHERE</div>
+                <hr class="uk-divider-small uk-margin-medium-bottom">
+            </div>
+            <div class="uk-margin-xlarge-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98545.86919775498!2d176.7983402948895!3d-39.47930369172639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69c9d64fb1ca99%3A0x500ef6143a2e850!2z44ON44O844OU44Ki!5e0!3m2!1sja!2snz!4v1561543103617!5m2!1sja!2snz" width="640" height="400" frameborder="0" style="border:0;width:95%;filter:grayscale(100%);-webkit-filter:grayscale(100%);"></iframe>
+            </div>
+            <div class="uk-margin-xlarge" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
+                <a class="uk-link-reset" href="https://twitter.com/hirotatsuuu" target="_blank">#世界のどこかで会いましょう</a>
+            </div>
+        </div>
+    </div>
+
 
     <div class="uk-margin-xlarge uk-container" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-        <div class="uk-text-center">
-            <img data-src="images/pic04.jpg" decoding="async" uk-img>
-        </div>
-    </div>
-
-    <div class="uk-section uk-margin-xlarge" id="contact" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-        <div class="uk-text-center uk-container">
-            <div class="uk-text-meta">Tonlé Sap, Cambodia</div>
-        </div>
+        <img src="images/pic04.jpg" uk-img>
     </div>
 
     <div class="uk-section-xsmall uk-section-secondary uk-light" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
