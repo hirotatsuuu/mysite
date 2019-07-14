@@ -17,6 +17,9 @@
 <body>
     <div uk-sticky>
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position:relative;z-index:980;">
+            <div class="uk-navbar-left uk-margin-left">
+                <a class="uk-link-reset" href="#">hirotatsu.</a>
+            </div>
             <div class="uk-navbar-right uk-margin-right">
                 <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#menu-modal"></a>
             </div>
@@ -43,9 +46,9 @@
         <div class="uk-visible-toggle" tabindex="-1" uk-slideshow="animation:fade;autoplay:true;autoplay-interval:10000;ratio:7:4.5;pause-on-hover:false;">
             <ul class="uk-slideshow-items">
                 <li><img src="images/pic01.jpg" uk-cover uk-img></li>
-                <li><img src="images/pic02.jpg" uk-cover uk-img></li>
-                <li><img src="images/pic04.jpg" uk-cover uk-img></li>
-                <li><img src="images/pic07.jpg" uk-cover uk-img></li>
+                <li><img src="images/pic02.jpg" uk-cover uk-img decoding="async"></li>
+                <li><img src="images/pic04.jpg" uk-cover uk-img decoding="async"></li>
+                <li><img src="images/pic07.jpg" uk-cover uk-img decoding="async"></li>
             </ul>
         </div>
     </div>
@@ -142,14 +145,7 @@
     <div class="uk-section uk-margin-large" id="history">
         <div class="uk-flex-middle" uk-grid>
             <div class="uk-width-1-2@m uk-flex-last uk-flex-first@s" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-                <div class="uk-visible-toggle" tabindex="-1" uk-slideshow="animation:fade;autoplay:true;autoplay-interval:5000;pause-on-hover:false;">
-                    <ul class="uk-slideshow-items">
-                        <li><img src="images/pic08.jpg" uk-cover uk-img decoding="async"></li>
-                        <li><img src="images/pic05.jpg" uk-cover uk-img decoding="async"></li>
-                        <li><img src="images/pic06.jpg" uk-cover uk-img decoding="async"></li>
-                        <li><img src="images/pic03.jpg" uk-cover uk-img decoding="async"></li>
-                    </ul>
-                </div>
+                <img src="images/pic08.jpg" uk-img decoding="async">
             </div>
             <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
                 <div class="uk-margin-large-left uk-margin-large-top">
@@ -191,7 +187,7 @@
                                 <img data-src="images/pic10.jpg" decoding="async" uk-img>
                             </div>
                             <div class="uk-width-1-3@l uk-width-1-1 uk-flex-first">
-                                <p>ある朝家を出た。徒歩で大通りまで行き、そこからヒッチハイクで最南端の佐多岬へ。そのまま最北端の宗谷岬へ。その後ヒッチハイクで家の近くまで帰ってきて、徒歩で帰宅する。「移動は徒歩かヒッチハイクのみ」「宿は使わない、基本的には野宿をする」がマイルール。結果、41台の車を乗り継いで、達成することができた。さらに今回の活動で使ったお金は「ゼロ円」（フェリー代を除く）。ご飯や飲み物をすべてヒッチハイクでお世話になった方にごちそうして頂いた。また、野宿を基本としていたが、ヒッチハイクでお世話になった方の家に泊めてもらうこともしばしば。最初は自分との戦いという挑戦だったが、最終的には「人の優しさに触れる旅」となった。すべての関わって下さった方々に、心からの感謝を伝えたい。本当にありがとうございました。
+                                <p>ある朝家を出た。徒歩で大通りまで行き、そこからヒッチハイクで最南端の佐多岬へ。そのまま最北端の宗谷岬へ。そしてヒッチハイクで家の近くまで帰ってきて、徒歩で帰宅する。「移動は徒歩かヒッチハイクのみ」「宿は使わない、基本的には野宿」がマイルール。結果、41台の車を乗り継いで、達成することができた。さらに、今回の挑戦で使ったお金は「ゼロ円」（フェリー代を除く）。ご飯や飲み物をすべてヒッチハイクでお世話になった方にごちそうして頂いた。寝床は野宿を基本としていたが、ヒッチハイクでお世話になった方の家に泊めてもらうこともしばしば。最初は自分との戦いという挑戦だったが、気づけば「人の優しさに触れる旅」となっていた。すべての関わって下さった方々に、心からの感謝を伝えたい。本当にありがとうございました。
                                 </p>
                             </div>
                         </div>
@@ -200,8 +196,8 @@
             </div>
             <div class="uk-margin-xlarge">
                 <article class="uk-article" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-                    <div class="uk-text-large">ゼロ円ワーホリ</div>
-                    <p class="uk-article-meta">2018.09.12 -</p>
+                    <div class="uk-text-large">ゼロ円ワーホリ(ヒッチハイクニュージーランド一周)</div>
+                    <p class="uk-article-meta">2018.09.12 - 2019.09.12</p>
                     <div class="uk-text-center uk-margin-medium">
                         <div class="uk-flex-middle" uk-grid>
                             <div class="uk-width-1-3@l uk-width-1-2 uk-flex-first@l">
@@ -211,10 +207,19 @@
                                 <img data-src="images/pic12.jpg" decoding="async" uk-img>
                             </div>
                             <div class="uk-width-1-3@l uk-width-1-1 uk-flex-first">
-                                <p>「ヒッチハイク」と「ボランディア」でゼロ円ワーホリをしている。生活の基本である衣食住、これをゼロ円に抑えることができれば、ゼロ円ワーホリができるのではと考えた。衣類は日本から持ってくれば良い。代わりにニュージーランドを一周したい。そこで衣類を移動に変更し、僕の生活の基本を「移食住」と定義。これに掛かる費用をゼロ円にしてワーホリをすることに。もちろん最低限必要なお金はある。家からの電車代や飛行機代、島移動等。それらの費用を10万円以内に収めよう。また、活動費用の足しにするため、クラウドファンディング（Polca）で3万円近くのご支援を頂いた。ご支援して下さった方々、本当にありがとうございました。「初期費用100万円」「語学学校からのジャパレス」と言われている「ワーホリのあたりまえ」に対して一石を投じたい。そんな想いで活動している。
+                                <p>「ヒッチハイク」と「ボランディア」で移食住にかかるお金をゼロ円に抑えてニュージーランドを一周するという挑戦。生活の基本である「衣食住」をゼロ円に抑えることができれば、お金を使わずに一年間ニュージーランドに滞在できるのではと考えた。衣類は日本から持ってくれば良い。代わりにニュージーランドを一周したい。そこで衣類を移動に変更し、僕の生活の基本を「移食住」と再定義。これにかかる費用をゼロ円にしてワーホリをすることに。もちろん最低限必要なお金はある。家からの電車代や飛行機代、島移動等。それらの費用を10万円以内に収めよう。また、活動資金としてクラウドファンディング（Polca）で3万円近くのご支援を頂いた。ご支援して下さった方々に、心からの感謝を伝えたい。「初期費用100万円」「語学学校からのジャパレス」と言われている「ワーホリのあたりまえ」に対して一石を投じたい。そしてワーホリの敷居を少しでも下げたい。そんな想いのこもった挑戦。
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </article>
+            </div>
+            <div class="uk-margin-xlarge">
+                <article class="uk-article" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
+                    <div class="uk-text-large">ヒッチハイクオーストラリア一周</div>
+                    <p class="uk-article-meta">2019.09.12 -</p>
+                    <div class="uk-text-center uk-margin-medium">
+                            <p>オーストラリアをヒッチハイクのみで一周する。最北端、最南端、最西端、最東端とエアーズロックをチェックポイントとし、移動はヒッチハイクか徒歩のみ。日本のアウトドアブランド、株式会社mont-bell様にスポンサードして頂き、約20000kmの旅をする。まだ始まっていないが、現在着々と準備を進めている。航空券の手配、ルートの選定、スケジュール予定、予算など。この活動を通して、「ヒッチハイク」に関する確かな情報発信をしたい。そしてヒッチハイクに興味を持っている人の背中を推したい。そんな挑戦。</p>
                     </div>
                 </article>
             </div>
@@ -230,12 +235,10 @@
             <div class="uk-text-lead" >CONTACT</div>
             <hr class="uk-divider-small uk-margin-medium-bottom">
             <div class="uk-margin-large">
-                <div class="uk-text-meta"><a href="mailto:hirotatsuuu@gmail.com">hirotatsuuu@gmail.com</a></div>
+                <div class="uk-text-meta">お問い合わせは、Emailまたは下のコンタクトフォームからお願いいたします。</div>
             </div>
             <div class="uk-margin-large">
-                <div class="uk-text-meta">
-                    <a class="uk-link-reset" href="https://twitter.com/intent/tweet?screen_name=hirotatsuuu&ref_src=twsrc%5Etfw" data-show-count="false">@hirotatsuuuにツイートする</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+                <div class="uk-text-meta"><a href="mailto:hirotatsuuu@gmail.com">hirotatsuuu@gmail.com</a></div>
             </div>
             <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy89YEQC3hpnd3_TzXnkBvbDmHv5JZ--5YkCeSJEFlh8G0zQ/formResponse">
                 <div class="uk-margin">
@@ -263,15 +266,15 @@
             <div class="uk-margin-xlarge-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98545.86919775498!2d176.7983402948895!3d-39.47930369172639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69c9d64fb1ca99%3A0x500ef6143a2e850!2z44ON44O844OU44Ki!5e0!3m2!1sja!2snz!4v1561543103617!5m2!1sja!2snz" width="640" height="400" frameborder="0" style="border:0;width:95%;filter:grayscale(100%);-webkit-filter:grayscale(100%);"></iframe>
             </div>
-            <div class="uk-margin-xlarge" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
+            <div class="uk-flex uk-flex-middle uk-flex-center" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;" uk-height-viewport>
                 <a class="uk-link-reset" href="https://twitter.com/hirotatsuuu" target="_blank">#世界のどこかで会いましょう</a>
             </div>
         </div>
     </div>
 
 
-    <div class="uk-margin-xlarge uk-container" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
-        <img src="images/pic04.jpg" uk-img>
+    <div class="uk-margin-large-bottom uk-container" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
+        <img src="images/pic04.jpg" uk-img decoding="async">
     </div>
 
     <div class="uk-section-xsmall uk-section-secondary uk-light" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true;">
